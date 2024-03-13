@@ -149,3 +149,18 @@ function notify(status, message)
         customWrapper: '',
     });
 }
+
+function toggle_password(element,id)
+{
+    var type = $(`#${id}`).attr('type');
+    if(type == 'password')
+    {
+        $(`#${id}`).attr('type','text');
+        $(element).html('<i class="fas fa-eye-slash"></i>');
+    }
+    else if(type == 'text')
+    {
+        $(`#${id}`).attr('type','password');
+        $(element).html('<i class="fas fa-eye"></i>');
+    }
+}

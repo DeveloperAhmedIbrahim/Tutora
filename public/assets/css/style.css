@@ -953,3 +953,7 @@ link:focus,
 .footer .mb-0{
     color: white !important;
 }
+
+.toggle-password{
+    cursor: pointer;
+}
