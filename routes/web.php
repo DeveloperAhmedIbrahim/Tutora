@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Admin\DashboardController AS _DashboardController;
+use App\Http\Controllers\Admin\UserController AS _UserController;
 use App\Http\Controllers\Admin\AuthController AS _AuthController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
@@ -39,4 +40,7 @@ Route::get('admin/logout',[_AuthController::class,"logout"]);
 Route::prefix('admin')->middleware(AdminGuard::class)->group(function(){
     Route::match(['GET','POST'],'profile',[_AuthController::class,'profile']);
     Route::get('dashboard',[_DashboardController::class,'index']);
+    Route::prefix('users')->group(function(){
+        Route::get('list',[_UserController::class,'list']);
+    });
 });

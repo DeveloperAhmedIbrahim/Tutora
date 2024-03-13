@@ -48,4 +48,21 @@ function toggle_password(element,id)
     }
 }
 
+function confirmation(section, url, message)
+{
+    swal({
+        title: "Are you sure",
+        text: `${message}`,
+        type: "warning",
+        showCancelButton: !0,
+        confirmButtonText: "Yes, do it!",
+        showClass: { popup: "animate__animated animate__fadeIn" },
+        customClass: {
+            confirmButton: "btn btn-primary me-3 waves-effect waves-light",
+            cancelButton: "btn btn-label-secondary waves-effect waves-light",
+        },
+    }, function () {
+        window.location.href = url;
+    });
+}
 

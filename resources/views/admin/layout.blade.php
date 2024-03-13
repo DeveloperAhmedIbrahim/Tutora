@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="{{ asset('assets/admin/css/main.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/admin/css/color_skins.css') }}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link rel="stylesheet" href="{{ asset('assets/admin/vendor/sweetalert/sweetalert.css') }}"/>
 </head>
 <body class="theme-blush">
     <div class="page-loader-wrapper">
@@ -84,10 +85,16 @@
                 </div>
                 <nav id="left-sidebar-nav" class="sidebar-nav">
                     <ul id="main-menu" class="metismenu">
-                        <li class="active">
-                            <a href="{{ url('') }}">
-                                <i class="icon-home"></i>
+                        <li class="{{ request()->is('admin/dashboard')  == 1 ? 'active' : '' }}">
+                            <a href="{{ url('/') }}">
+                                <i class="fa-solid fa-house"></i>
                                 <span>Dashboard</span>
+                            </a>
+                        </li>
+                        <li class="{{ request()->is('admin/users/*')  == 1 ? 'active' : '' }}">
+                            <a href="{{ url('admin/users/list') }}">
+                                <i class="fas fa-users"></i>
+                                <span>Users</span>
                             </a>
                         </li>
                     </ul>
@@ -109,6 +116,7 @@
     <script src="{{ asset('assets/admin/bundles/chartist.bundle.js') }}"></script>
     <script src="{{ asset('assets/admin/vendor/toastr/toastr.js') }}"></script>
     <script src="{{ asset('assets/admin/bundles/mainscripts.bundle.js') }}"></script>
+    <script src="{{ asset('assets/admin/vendor/sweetalert/sweetalert.min.js') }}"></script>
     <script src="{{ asset('assets/admin/js/index.js') }}"></script>
 </body>
 </html>
