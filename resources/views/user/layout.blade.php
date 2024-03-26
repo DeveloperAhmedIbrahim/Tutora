@@ -27,7 +27,7 @@
     <div class="preloader">
         <img src="{{ asset('assets/images/preloader.gif') }}" alt="preloader">
     </div>
-    <header class="fixed-top header">
+    <header class="header">
         <div class="top-header py-2 bg-white">
             <div class="container">
                 <div class="row no-gutters">

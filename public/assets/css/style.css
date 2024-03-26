@@ -957,3 +957,16 @@ link:focus,
 .toggle-password{
     cursor: pointer;
 }
+
+header.header{
+    width: 100%;
+    top: 0;
+    position: absolute;
+    z-index: 1;
+}
+
+header.header .navigation,
+header.header .navigation .navbar-nav{
+    background-color: transparent;
+    background: transparent;
+}
