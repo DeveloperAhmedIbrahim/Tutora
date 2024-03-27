@@ -66,3 +66,6 @@ function confirmation(section, url, message)
     });
 }
 
+
+CKEDITOR.replace('ckeditor');
+CKEDITOR.config.height = 300;

@@ -97,6 +97,12 @@
                                 <span>Users</span>
                             </a>
                         </li>
+                        <li class="{{ request()->is('admin/packages/*')  == 1 ? 'active' : '' }}">
+                            <a href="{{ url('admin/packages/list') }}">
+                                <i class="fa-solid fa-cube"></i>
+                                <span>Packages</span>
+                            </a>
+                        </li>
                     </ul>
                 </nav>
             </div>
@@ -117,6 +123,7 @@
     <script src="{{ asset('assets/admin/vendor/toastr/toastr.js') }}"></script>
     <script src="{{ asset('assets/admin/bundles/mainscripts.bundle.js') }}"></script>
     <script src="{{ asset('assets/admin/vendor/sweetalert/sweetalert.min.js') }}"></script>
+    <script src="{{ asset('assets/admin/vendor/ckeditor/ckeditor.js') }}"></script>
     <script src="{{ asset('assets/admin/js/index.js') }}"></script>
 </body>
 </html>

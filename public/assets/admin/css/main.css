@@ -10570,3 +10570,8 @@ ul.choose-skin li div,
 .toggle-password{
     cursor: pointer;
 }
+
+.btn.btn-theme{
+    background-color: #7E0001;
+    color: white;
+}

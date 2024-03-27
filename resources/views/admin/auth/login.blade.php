@@ -51,7 +51,7 @@
                                             <span class="text-danger">{{ $message }}</span>
                                         @enderror
                                         @if (Session::has('email'))
-                                            <span class="text-danger">{{ $message }}</span>
+                                            <span class="text-danger">{{ session('email') }}</span>
                                         @endif
                                     </div>
                                     <div class="form-group">
@@ -68,7 +68,7 @@
                                             <span class="text-danger">{{ $message }}</span>
                                         @enderror
                                         @if (Session::has('password'))
-                                            <span class="text-danger">{{ $message }}</span>
+                                            <span class="text-danger">{{ session('password') }}</span>
                                         @endif
                                     </div>
                                     <button type="submit" class="btn btn-primary btn-lg btn-block">LOGIN</button>

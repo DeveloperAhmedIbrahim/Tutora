@@ -1,8 +1,9 @@
 <?php
 
 use App\Http\Controllers\Admin\DashboardController AS _DashboardController;
-use App\Http\Controllers\Admin\UserController AS _UserController;
 use App\Http\Controllers\Admin\AuthController AS _AuthController;
+use App\Http\Controllers\Admin\UserController AS _UserController;
+use App\Http\Controllers\Admin\PackageController AS _PackageController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\AuthController;
@@ -42,5 +43,14 @@ Route::prefix('admin')->middleware(AdminGuard::class)->group(function(){
     Route::get('dashboard',[_DashboardController::class,'index']);
     Route::prefix('users')->group(function(){
         Route::get('list',[_UserController::class,'list']);
+        Route::get('delete/{id}',[_UserController::class,'delete']);
+    });
+    Route::prefix('packages')->group(function(){
+        Route::get('list',[_PackageController::class,'list']);
+        Route::get('new',[_PackageController::class,'new']);
+        Route::get('edit/{id}',[_PackageController::class,'edit']);
+        Route::get('delete/{id}',[_PackageController::class,'delete']);
+        Route::post('insert',[_PackageController::class,'insert']);
+        Route::post('update',[_PackageController::class,'update']);
     });
 });
