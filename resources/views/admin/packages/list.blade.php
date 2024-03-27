@@ -24,7 +24,7 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="card">
-                    <div class="header bline d-flex justify-content-between">
+                    <div class="header bline d-flex justify-content-between align-items-center">
                         <h2>Packages List</h2>
                         <h2><a class="btn btn-theme" href="{{ url('admin/packages/new') }}">
                             <i class="fa-solid fa-plus"></i>
@@ -53,7 +53,7 @@
                                             <a href="{{ url('admin/packages/edit/') }}/{{ $packages[$i]->id }}" class="btn btn-success">
                                                 <i class="fa-solid fa-pen"></i>
                                             </a>
-                                            <a href="javascript:void(0)" class="btn btn-danger" onclick="confirmation('tag','{{ url('admin/packages/delete') }}/{{ $packages[$i]->id }}','Do you really want to delete this user ?')">
+                                            <a href="javascript:void(0)" class="btn btn-danger" onclick="confirmation('tag','{{ url('admin/packages/delete') }}/{{ $packages[$i]->id }}','Do you really want to delete this package ?')">
                                                 <i class="fa-solid fa-trash"></i>
                                             </a>
                                         </td>

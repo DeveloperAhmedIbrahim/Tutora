@@ -13,10 +13,10 @@ return new class extends Migration
     {
         Schema::create('packages', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
-            $table->longText('description');
-            $table->longText('details');
-            $table->bigInteger('price');
+            $table->string('name')->nullable();
+            $table->longText('description')->nullable();
+            $table->longText('details')->nullable();
+            $table->double('price')->default(0);
             $table->timestamps();
             $table->softDeletes();
         });

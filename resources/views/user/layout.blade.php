@@ -91,6 +91,9 @@
                             <li class="nav-item {{ request()->is('courses') == 1 ? 'active' : '' }} @@courses">
                                 <a class="nav-link" href="{{ url('courses') }}">COURSES</a>
                             </li>
+                            <li class="nav-item {{ request()->is('packages') == 1 ? 'active' : '' }} @@packages">
+                                <a class="nav-link" href="{{ url('packages') }}">PACKAGES</a>
+                            </li>
                             <li class="nav-item {{ request()->is('contact') == 1 ? 'active' : '' }} @@contact">
                                 <a class="nav-link" href="{{ url('contact') }}">CONTACT</a>
                             </li>
