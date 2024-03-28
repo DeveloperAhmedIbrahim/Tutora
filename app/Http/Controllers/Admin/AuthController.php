@@ -53,10 +53,6 @@ class AuthController extends Controller
 
     public function profile(Request $request)
     {
-        if(Auth::check() && Auth::user()->role == 1)
-        {
-            return redirect('admin/dashboard');
-        }
         if($request->method() == 'GET')
         {
             return view('admin.profile');
