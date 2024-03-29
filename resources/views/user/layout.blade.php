@@ -31,7 +31,7 @@
         <div class="top-header py-2 bg-white">
             <div class="container">
                 <div class="row no-gutters">
-                    <div class="col-lg-4 text-center text-lg-left">
+                    {{-- <div class="col-lg-4 text-center text-lg-left">
                         <a class="text-color mr-3" href="tel:+443003030266"><strong>CALL</strong> +44 300 303 0266</a>
                         <ul class="list-inline d-inline">
                             <li class="list-inline-item mx-0">
@@ -47,19 +47,19 @@
                                 <a class="d-inline-block p-2 text-color" href="https://instagram.com"><i class="ti-instagram"></i></a>
                             </li>
                         </ul>
-                    </div>
-                    <div class="col-lg-8 text-center text-lg-right">
+                    </div> --}}
+                    <div class="col-lg-12 text-center text-lg-right">
                         <ul class="list-inline">
                             @if (Auth::check())
                                 <li class="list-inline-item">
-                                    <a href="{{ url('logout') }}" class="text-uppercase text-color p-sm-2 py-2 px-0 d-inline-block">logout</a>
+                                    <a href="{{ url('logout') }}" class="text-uppercase text-color p-sm-2 py-2 px-0 d-inline-block" style="font-size: 14px;"><b>logout</b></a>
                                 </li>
                             @else
                                 <li class="list-inline-item">
-                                    <a href="{{ url('login') }}" class="text-uppercase text-color p-sm-2 py-2 px-0 d-inline-block">login</a>
+                                    <a href="{{ url('login') }}" class="text-uppercase text-color p-sm-2 py-2 px-0 d-inline-block" style="font-size: 14px;"><b>login</b></a>
                                 </li>
                                 <li class="list-inline-item">
-                                    <a href="{{ url('register') }}" class="text-uppercase text-color p-sm-2 py-2 px-0 d-inline-block">register</a>
+                                    <a href="{{ url('register') }}" class="text-uppercase text-color p-sm-2 py-2 px-0 d-inline-block" style="font-size: 14px;"><b>register</b></a>
                                 </li>
                             @endif
                         </ul>
@@ -176,12 +176,12 @@
         <div class="footer bg-footer border-bottom">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-4 col-sm-8 mb-5 mb-lg-0">
+                    <div class="col-lg-4 col-md-4 mb-5 mb-lg-0">
                         <a class="logo-footer" href="{{ url('home') }}">
-                            <img class="img-fluid mb-4" src="{{ asset('assets/images/full-logo.png') }}" class="w-100" alt="logo">
+                            <img class="img-fluid mb-4 w-100" src="{{ asset('assets/images/full-logo.png') }}" alt="logo">
                         </a>
                     </div>
-                    <div class="col-lg-2 col-md-4 col-sm-4 col-6 mb-5 mb-md-0">
+                    <div class="col-lg-3 col-md-4 mb-5 mb-md-0">
                         <h4 class="text-white mb-5">COMPANY</h4>
                         <ul class="list-unstyled">
                             <li class="mb-3"><a class="text-color" href="{{ url('about') }}">About Us</a></li>
@@ -189,7 +189,7 @@
                             <li class="mb-3"><a class="text-color" href="{{ url('contact') }}">Contact</a></li>
                         </ul>
                     </div>
-                    <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-5 mb-md-0">
+                    {{-- <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-5 mb-md-0">
                         <h4 class="text-white mb-5">LINKS</h4>
                         <ul class="list-unstyled">
                             <li class="mb-2">
@@ -208,12 +208,11 @@
                                 </a>
                             </li>
                         </ul>
-                    </div>
-                    <div class="col-lg-4 col-md-3 col-sm-4 col-6 mb-5 mb-md-0">
+                    </div> --}}
+                    <div class="col-lg-5 col-md-5 mb-5 mb-md-0">
                         <h4 class="text-white mb-5">SUPPORT</h4>
                         <ul class="list-unstyled">
                             <li class="mb-2">23621 15 Mile Rd #C104, Clinton MI, 48035, New York, USA</li>
-                            <li class="mb-2">+1 (2) 345 6789</li>
                             <li class="mb-2">+1 (2) 345 6789</li>
                             <li class="mb-2">contact@yourdomain.com</li>
                         </ul>
@@ -230,7 +229,7 @@
                                 var CurrentYear = new Date().getFullYear()
                                 document.write(CurrentYear)
                             </script>
-                            , designed & developed by <a href="https://Tutora.com/" class="text-muted">Tutora</a>
+                            , designed & developed by <a href="https://www.trigrafix.com/" class="text-muted">Tri Grafix</a>
                         </p>
                     </div>
                     <div class="col-sm-5 text-sm-right text-center">

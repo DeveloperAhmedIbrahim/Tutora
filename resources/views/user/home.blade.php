@@ -275,7 +275,7 @@
             <!-- mobile see all button -->
             <div class="row">
                 <div class="col-12 text-center">
-                    <a href="{{ url('courses') }}" class="btn btn-sm btn-outline-primary d-sm-none d-inline-block">sell all</a>
+                    <a href="{{ url('courses') }}" class="btn btn-sm btn-outline-primary d-sm-none d-inline-block">Explore More</a>
                 </div>
             </div>
         </div>
