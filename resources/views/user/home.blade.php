@@ -19,7 +19,7 @@
                                 dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exer</p>
                             <a href="{{ url('contact') }}" class="btn btn-primary" data-animation-out="fadeOutRight"
                                 data-delay-out="5" data-duration-in=".3" data-animation-in="fadeInLeft"
-                                data-delay-in=".7">Apply now</a>
+                                data-delay-in=".7">Explore Course</a>
                         </div>
                     </div>
                 </div>
@@ -36,7 +36,7 @@
                                 incididunt ut labore et
                                 dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exer</p>
                             <a href="{{ url('contact') }}" class="btn btn-primary" data-animation-out="fadeOutUp" data-delay-out="5"
-                                data-duration-in=".3" data-animation-in="fadeInDown" data-delay-in=".7">Apply now</a>
+                                data-duration-in=".3" data-animation-in="fadeInDown" data-delay-in=".7">Explore Course</a>
                         </div>
                     </div>
                 </div>
@@ -62,6 +62,37 @@
         </div>
     </section>
     <!-- /hero slider -->
+
+    <!-- success story -->
+    <section class="section bg-cover" data-background="{{ asset('assets/images/backgrounds/success-story.jpg') }}" style="margin-top: -90px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-sm-4 position-relative success-video">
+                    <a class="play-btn venobox" href="https://youtu.be/nA1Aqp0sPQo" data-vbtype="video">
+                        <i class="ti-control-play"></i>
+                    </a>
+                </div>
+                <div class="col-lg-6 col-sm-8">
+                    <div class="bg-white p-5">
+                        <h2 class="section-title">Why Tutora?</h2>
+                        <p>
+                            <ul class="list-styled">
+                                <li>Handpicked tutors from top schools in the country</li>
+                                <li>Personalized help with schoolwork</li>
+                                <li>Free consultation with tutor</li>
+                                <li>Access to extra practice text and worksheets</li>
+                                <li>Access to thousands of subject based worksheets</li>
+                                <li>Personalized Study Plans</li>
+                                <li>Mock Exams & Performance Analysis</li>
+                                <li>Extended Support Beyond Sessions</li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /success story -->
 
     <!-- banner-feature -->
     <section class="bg-gray overflow-md-hidden">
@@ -166,7 +197,7 @@
                             <p class="card-text mb-4"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
                                 eiusmod tempor
                                 incididunt ut labore et dolore magna.</p>
-                            <a href="{{ url('course/details') }}" class="btn btn-primary btn-sm">Apply now</a>
+                            <a href="{{ url('course/details') }}" class="btn btn-primary btn-sm">Explore Course</a>
                         </div>
                     </div>
                 </div>
@@ -186,7 +217,7 @@
                             <p class="card-text mb-4"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
                                 eiusmod tempor
                                 incididunt ut labore et dolore magna.</p>
-                            <a href="{{ url('course/details') }}" class="btn btn-primary btn-sm">Apply now</a>
+                            <a href="{{ url('course/details') }}" class="btn btn-primary btn-sm">Explore Course</a>
                         </div>
                     </div>
                 </div>
@@ -206,7 +237,7 @@
                             <p class="card-text mb-4"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
                                 eiusmod tempor
                                 incididunt ut labore et dolore magna.</p>
-                            <a href="{{ url('course/details') }}" class="btn btn-primary btn-sm">Apply now</a>
+                            <a href="{{ url('course/details') }}" class="btn btn-primary btn-sm">Explore Course</a>
                         </div>
                     </div>
                 </div>
@@ -226,7 +257,7 @@
                             <p class="card-text mb-4"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
                                 eiusmod tempor
                                 incididunt ut labore et dolore magna.</p>
-                            <a href="{{ url('course/details') }}" class="btn btn-primary btn-sm">Apply now</a>
+                            <a href="{{ url('course/details') }}" class="btn btn-primary btn-sm">Explore Course</a>
                         </div>
                     </div>
                 </div>
@@ -246,7 +277,7 @@
                             <p class="card-text mb-4"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
                                 eiusmod tempor
                                 incididunt ut labore et dolore magna.</p>
-                            <a href="{{ url('course/details') }}" class="btn btn-primary btn-sm">Apply now</a>
+                            <a href="{{ url('course/details') }}" class="btn btn-primary btn-sm">Explore Course</a>
                         </div>
                     </div>
                 </div>
@@ -266,7 +297,7 @@
                             <p class="card-text mb-4"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
                                 eiusmod tempor
                                 incididunt ut labore et dolore magna.</p>
-                            <a href="{{ url('course/details') }}" class="btn btn-primary btn-sm">Apply now</a>
+                            <a href="{{ url('course/details') }}" class="btn btn-primary btn-sm">Explore Course</a>
                         </div>
                     </div>
                 </div>
@@ -296,40 +327,8 @@
     </section>
     <!-- /cta -->
 
-    <!-- success story -->
-    <section class="section bg-cover" data-background="{{ asset('assets/images/backgrounds/success-story.jpg') }}">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 col-sm-4 position-relative success-video">
-                    <a class="play-btn venobox" href="https://youtu.be/nA1Aqp0sPQo" data-vbtype="video">
-                        <i class="ti-control-play"></i>
-                    </a>
-                </div>
-                <div class="col-lg-6 col-sm-8">
-                    <div class="bg-white p-5">
-                        <h2 class="section-title">Why Tutora?</h2>
-                        <p>
-                            <ul class="list-styled">
-                                <li>Handpicked tutors from top schools in the country</li>
-                                <li>Personalized help with schoolwork</li>
-                                <li>Free consultation with tutor</li>
-                                <li>Access to extra practice text and worksheets</li>
-                                <li>Access to thousands of subject based worksheets</li>
-                                <li>Personalized Study Plans</li>
-                                <li>Mock Exams & Performance Analysis</li>
-                                <li>Extended Support Beyond Sessions</li>
-                            </ul>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- /success story -->
-
-
     <!-- teachers -->
-    <section class="section">
+    {{-- <section class="section">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-12">
@@ -403,7 +402,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> --}}
     <!-- /teachers -->
 
 @endsection

@@ -24,9 +24,9 @@
 </head>
 
 <body>
-    <div class="preloader">
+    {{-- <div class="preloader">
         <img src="{{ asset('assets/images/preloader.gif') }}" alt="preloader">
-    </div>
+    </div> --}}
     <header class="header">
         <div class="top-header py-2 bg-white">
             <div class="container">
