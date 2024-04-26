@@ -27,8 +27,8 @@
             <div class="row justify-content-center">
                 <!-- packages item -->
                 @for ($i = 0; $i < count($packages); $i++)
-                    <div class="col-lg-4 col-sm-6 mb-5">
-                        <div class="card p-0 border-primary rounded-0 hover-shadow border-theme">
+                    <div class="card col-md-4 col-sm-6 mb-5 border-0">
+                        <div class="p-2 border border-primary border-theme rounded-0 hover-shadow rounded-0 h-100">
                             <div class="card-body">
                                 <div class="text-center py-2">
                                     <b>{{ $packages[$i]->name }}</b>

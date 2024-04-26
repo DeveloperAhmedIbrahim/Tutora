@@ -212,9 +212,9 @@
                     <div class="col-lg-5 col-md-5 mb-5 mb-md-0">
                         <h4 class="text-white mb-5">SUPPORT</h4>
                         <ul class="list-unstyled">
-                            <li class="mb-2">23621 15 Mile Rd #C104, Clinton MI, 48035, New York, USA</li>
+                            <li class="mb-2">80 Arch Street Needham MA</li>
                             <li class="mb-2">+1 (2) 345 6789</li>
-                            <li class="mb-2">contact@yourdomain.com</li>
+                            <li class="mb-2">tutora@thetutora.com</li>
                         </ul>
                     </div>
                 </div>
