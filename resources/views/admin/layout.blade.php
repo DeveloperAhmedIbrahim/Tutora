@@ -103,6 +103,12 @@
                                 <span>Packages</span>
                             </a>
                         </li>
+                        <li class="{{ request()->is('admin/courses/*')  == 1 ? 'active' : '' }}">
+                            <a href="{{ url('admin/courses/list') }}">
+                                <i class="fas fa-book-open"></i>
+                                <span>Courses</span>
+                            </a>
+                        </li>
                     </ul>
                 </nav>
             </div>

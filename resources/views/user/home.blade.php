@@ -182,125 +182,24 @@
             <!-- course list -->
             <div class="row justify-content-center">
                 <!-- course item -->
-                <div class="col-lg-4 col-sm-6 mb-5">
-                    <div class="card p-0 border-primary rounded-0 hover-shadow">
-                        <img class="card-img-top rounded-0" src="{{ asset('assets/images/courses/course-1.jpg') }}" alt="course thumb">
-                        <div class="card-body">
-                            <ul class="list-inline mb-2">
-                                <li class="list-inline-item"><i class="ti-calendar mr-1 text-color"></i>02-14-2018</li>
-                                <li class="list-inline-item"><a class="text-color"
-                                        href="{{ url('course/details') }}">Humanities</a></li>
-                            </ul>
-                            <a href="{{ url('course/details') }}">
-                                <h4 class="card-title">Photography</h4>
-                            </a>
-                            <p class="card-text mb-4"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                                eiusmod tempor
-                                incididunt ut labore et dolore magna.</p>
-                            <a href="{{ url('course/details') }}" class="btn btn-primary btn-sm">Explore Course</a>
+                @for ($i = 0; $i < count($courses); $i++)
+                    <div class="col-lg-4 col-sm-6 mb-5">
+                        <div class="card p-0 border-primary rounded-0 hover-shadow">
+                            <img class="card-img-top rounded-0" src="{{ asset('uploads/courses') }}/{{ $courses[$i]->image }}" alt="course thumb">
+                            <div class="card-body">
+                                {{-- <ul class="list-inline mb-2">
+                                    <li class="list-inline-item"><i class="ti-calendar mr-1 text-color"></i>02-14-2018</li>
+                                    <li class="list-inline-item"><a class="text-color" href="{{ url('course/details') }}">Humanities</a></li>
+                                </ul> --}}
+                                <a href="{{ url('course/details') }}">
+                                    <h4 class="card-title">{{ $courses[$i]->title }}</h4>
+                                </a>
+                                <p class="card-text mb-4">{!! Str::substr($courses[$i]->description, 0, 250) !!}......</p>
+                                <a href="{{ url('course/details') }}/{{ $courses[$i]->id }}" class="btn btn-primary btn-sm">Explore Course</a>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <!-- course item -->
-                <div class="col-lg-4 col-sm-6 mb-5">
-                    <div class="card p-0 border-primary rounded-0 hover-shadow">
-                        <img class="card-img-top rounded-0" src="{{ asset('assets/images/courses/course-2.jpg') }}" alt="course thumb">
-                        <div class="card-body">
-                            <ul class="list-inline mb-2">
-                                <li class="list-inline-item"><i class="ti-calendar mr-1 text-color"></i>02-14-2018</li>
-                                <li class="list-inline-item"><a class="text-color"
-                                        href="{{ url('course/details') }}">Humanities</a></li>
-                            </ul>
-                            <a href="{{ url('course/details') }}">
-                                <h4 class="card-title">Programming</h4>
-                            </a>
-                            <p class="card-text mb-4"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                                eiusmod tempor
-                                incididunt ut labore et dolore magna.</p>
-                            <a href="{{ url('course/details') }}" class="btn btn-primary btn-sm">Explore Course</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- course item -->
-                <div class="col-lg-4 col-sm-6 mb-5">
-                    <div class="card p-0 border-primary rounded-0 hover-shadow">
-                        <img class="card-img-top rounded-0" src="{{ asset('assets/images/courses/course-3.jpg') }}" alt="course thumb">
-                        <div class="card-body">
-                            <ul class="list-inline mb-2">
-                                <li class="list-inline-item"><i class="ti-calendar mr-1 text-color"></i>02-14-2018</li>
-                                <li class="list-inline-item"><a class="text-color"
-                                        href="{{ url('course/details') }}">Humanities</a></li>
-                            </ul>
-                            <a href="{{ url('course/details') }}">
-                                <h4 class="card-title">Lifestyle Archives</h4>
-                            </a>
-                            <p class="card-text mb-4"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                                eiusmod tempor
-                                incididunt ut labore et dolore magna.</p>
-                            <a href="{{ url('course/details') }}" class="btn btn-primary btn-sm">Explore Course</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- course item -->
-                <div class="col-lg-4 col-sm-6 mb-5">
-                    <div class="card p-0 border-primary rounded-0 hover-shadow">
-                        <img class="card-img-top rounded-0" src="{{ asset('assets/images/courses/course-4.jpg') }}" alt="course thumb">
-                        <div class="card-body">
-                            <ul class="list-inline mb-2">
-                                <li class="list-inline-item"><i class="ti-calendar mr-1 text-color"></i>02-14-2018</li>
-                                <li class="list-inline-item"><a class="text-color"
-                                        href="{{ url('course/details') }}">Humanities</a></li>
-                            </ul>
-                            <a href="{{ url('course/details') }}">
-                                <h4 class="card-title">Complete Freelancing</h4>
-                            </a>
-                            <p class="card-text mb-4"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                                eiusmod tempor
-                                incididunt ut labore et dolore magna.</p>
-                            <a href="{{ url('course/details') }}" class="btn btn-primary btn-sm">Explore Course</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- course item -->
-                <div class="col-lg-4 col-sm-6 mb-5">
-                    <div class="card p-0 border-primary rounded-0 hover-shadow">
-                        <img class="card-img-top rounded-0" src="{{ asset('assets/images/courses/course-5.jpg') }}" alt="course thumb">
-                        <div class="card-body">
-                            <ul class="list-inline mb-2">
-                                <li class="list-inline-item"><i class="ti-calendar mr-1 text-color"></i>02-14-2018</li>
-                                <li class="list-inline-item"><a class="text-color"
-                                        href="{{ url('course/details') }}">Humanities</a></li>
-                            </ul>
-                            <a href="{{ url('course/details') }}">
-                                <h4 class="card-title">Branding Design</h4>
-                            </a>
-                            <p class="card-text mb-4"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                                eiusmod tempor
-                                incididunt ut labore et dolore magna.</p>
-                            <a href="{{ url('course/details') }}" class="btn btn-primary btn-sm">Explore Course</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- course item -->
-                <div class="col-lg-4 col-sm-6 mb-5">
-                    <div class="card p-0 border-primary rounded-0 hover-shadow">
-                        <img class="card-img-top rounded-0" src="{{ asset('assets/images/courses/course-6.jpg') }}" alt="course thumb">
-                        <div class="card-body">
-                            <ul class="list-inline mb-2">
-                                <li class="list-inline-item"><i class="ti-calendar mr-1 text-color"></i>02-14-2018</li>
-                                <li class="list-inline-item"><a class="text-color"
-                                        href="{{ url('course/details') }}">Humanities</a></li>
-                            </ul>
-                            <a href="{{ url('course/details') }}">
-                                <h4 class="card-title">Art Design</h4>
-                            </a>
-                            <p class="card-text mb-4"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                                eiusmod tempor
-                                incididunt ut labore et dolore magna.</p>
-                            <a href="{{ url('course/details') }}" class="btn btn-primary btn-sm">Explore Course</a>
-                        </div>
-                    </div>
-                </div>
+                @endfor
             </div>
             <!-- /course list -->
             <!-- mobile see all button -->

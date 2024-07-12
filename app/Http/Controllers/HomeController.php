@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Course;
 use App\Models\Package;
 use Illuminate\Http\Request;
 
@@ -14,7 +15,8 @@ class HomeController extends Controller
 
     public function home()
     {
-        return view('user.home');
+        $courses = Course::all();
+        return view('user.home', compact('courses'));
     }
 
     public function about()
@@ -24,12 +26,19 @@ class HomeController extends Controller
 
     public function courses()
     {
-        return view('user.courses');
+        $courses = Course::all();
+        return view('user.courses', compact('courses'));
     }
 
-    public function course_details()
+    public function course_details($id)
     {
-        return view('user.course-details');
+        $course = Course::find($id);
+        $courses = Course::skip(0)->take(3)->get();
+        if($course == NULL)
+        {
+            return redirect()->back();
+        }
+        return view('user.course-details', compact('course', 'courses'));
     }
 
     public function packages()
