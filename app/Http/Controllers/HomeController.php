@@ -61,4 +61,9 @@ class HomeController extends Controller
     {
         return view('auth.register');
     }
+
+    public function application()
+    {
+        return view('user.application');
+    }
 }

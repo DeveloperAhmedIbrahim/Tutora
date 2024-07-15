@@ -97,6 +97,9 @@
                             <li class="nav-item {{ request()->is('contact') == 1 ? 'active' : '' }} @@contact">
                                 <a class="nav-link" href="{{ url('contact') }}">CONTACT</a>
                             </li>
+                            <li class="nav-item {{ request()->is('application') == 1 ? 'active' : '' }} @@application">
+                                <a class="nav-link" href="{{ url('application') }}">Apply Now</a>
+                            </li>
                         </ul>
                     </div>
                 </nav>
