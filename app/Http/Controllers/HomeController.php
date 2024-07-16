@@ -4,7 +4,9 @@ namespace App\Http\Controllers;
 
 use App\Models\Course;
 use App\Models\Package;
+use App\Mail\ContactMail;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
 
 class HomeController extends Controller
 {
@@ -47,11 +49,6 @@ class HomeController extends Controller
         return view('user.packages', compact('packages'));
     }
 
-    public function contact()
-    {
-        return view('user.contact');
-    }
-
     public function login()
     {
         return view('auth.login');
@@ -60,6 +57,26 @@ class HomeController extends Controller
     public function register()
     {
         return view('auth.register');
+    }
+
+    public function contact(Request $request)
+    {
+        if($request->method() === 'POST')
+        {
+            $request->validate([
+                'name' => 'required',
+                'email' => 'required',
+                'subject' => 'required',
+                'message' => 'required',
+            ]);
+            $data = $request->all();
+            Mail::to('siddiqui.ahmedibrahim@gmail.com')->send(new ContactMail($data));
+            return view('user.contact');
+        }
+        else
+        {
+            return view('user.contact');
+        }
     }
 
     public function application()

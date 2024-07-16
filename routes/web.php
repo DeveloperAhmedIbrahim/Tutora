@@ -33,7 +33,7 @@ Route::get('about',[HomeController::class,"about"]);
 Route::get('courses',[HomeController::class,"courses"]);
 Route::get('packages',[HomeController::class,"packages"]);
 Route::get('course/details/{id}',[HomeController::class,"course_details"]);
-Route::get('contact',[HomeController::class,"contact"]);
+Route::match(['GET','POST'],'contact',[HomeController::class,"contact"]);
 Route::get('application',[HomeController::class,"application"]);
 Route::get('login',[HomeController::class,"login"]);
 Route::get('register',[HomeController::class,"register"]);

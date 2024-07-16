@@ -20,7 +20,7 @@
 
     <!-- contact -->
     <section class="section bg-gray">
-        <div class="container">
+        <div class="container" id="contact">
             <div class="row">
                 <div class="col-lg-12">
                     <h2 class="section-title">Contact Us</h2>
@@ -28,14 +28,32 @@
             </div>
             <div class="row">
                 <div class="col-lg-7 mb-4 mb-lg-0">
-                    <form action="" method="POST">
-                        <input type="text" class="form-control mb-3" id="name" name="name"
-                            placeholder="Your Name" required>
-                        <input type="email" class="form-control mb-3" id="mail" name="mail"
-                            placeholder="Your Email" required>
-                        <input type="text" class="form-control mb-3" id="subject" name="subject" placeholder="Subject"
-                            required>
-                        <textarea name="message" id="message" class="form-control mb-3" placeholder="Your Message" required></textarea>
+                    <form action="{{ url('contact#contact') }}" method="POST">
+                        @csrf
+                        <div class="form-group">
+                            <input type="text" class="form-control mb-3" id="name" name="name" value="{{ old('name') }}" placeholder="Your Name">
+                            @error('name')
+                                <span class="text-danger">{{ $message }}</span>
+                            @enderror
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control mb-3" id="mail" name="email" value="{{ old('email') }}" placeholder="Your Email">
+                            @error('email')
+                                <span class="text-danger">{{ $message }}</span>
+                            @enderror
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control mb-3" id="subject" name="subject" value="{{ old('subject') }}" placeholder="Subject">
+                            @error('subject')
+                                <span class="text-danger">{{ $message }}</span>
+                            @enderror
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" id="message" class="form-control mb-3" placeholder="Your Message">{{ old('message') }}</textarea>
+                            @error('message')
+                                <span class="text-danger">{{ $message }}</span>
+                            @enderror
+                        </div>
                         <button type="submit" value="send" class="btn btn-primary">SEND MESSAGE</button>
                     </form>
                 </div>
