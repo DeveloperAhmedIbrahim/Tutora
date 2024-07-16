@@ -71,7 +71,7 @@ class HomeController extends Controller
             ]);
             $data = $request->all();
             Mail::to('siddiqui.ahmedibrahim@gmail.com')->send(new ContactMail($data));
-            return view('user.contact');
+            return redirect()->back()->with('success','You message sent successfully.');
         }
         else
         {
