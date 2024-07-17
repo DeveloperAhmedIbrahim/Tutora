@@ -1,5 +1,5 @@
 @extends('user.layout')
-@section('title', 'Contact')
+@section('title', 'Apply Now')
 @section('content')
     <!-- page title -->
     <section class="page-title-section overlay" data-background="{{ asset('assets/images/backgrounds/page-title.jpg') }}">
@@ -26,44 +26,71 @@
                     <h2 class="section-title">Contact Us</h2>
                 </div>
             </div>
-            <div class="row">
+            <div class="row" id="application">
                 <div class="col-lg-12 mb-4 mb-lg-0">
-                    <form action="" method="POST">
+                    <form action="{{ url('application/#application') }}" method="POST">
                         <div class="form-group">
                             <label for="name">Full Name</label>
-                            <input type="text" class="form-control mb-3" id="name" name="name" placeholder="Your Full Name" required>
+                            <input value="{{ old('name') }}" type="text" class="form-control mb-3" id="name" name="name" placeholder="Your Full Name" >
+                            @error('name')
+                                <span class="text-danger">{{ $message }}</span>
+                            @enderror
                         </div>
                         <div class="form-group">
                             <label for="email">Email Address</label>
-                            <input type="email" class="form-control mb-3" id="email" name="email" placeholder="Your Email Address" required>
+                            <input value="{{ old('email') }}" type="email" class="form-control mb-3" id="email" name="email" placeholder="Your Email Address" >
+                            @error('email')
+                                <span class="text-danger">{{ $message }}</span>
+                            @enderror
                         </div>
                         <div class="form-group">
                             <label for="contact">Contact Number</label>
-                            <input type="text" class="form-control mb-3" id="contact" name="contact" placeholder="Your Contact Number" required>
+                            <input value="{{ old('contact') }}" type="text" class="form-control mb-3" id="contact" name="contact" placeholder="Your Contact Number" >
+                            @error('contact')
+                                <span class="text-danger">{{ $message }}</span>
+                            @enderror
                         </div>
                         <div class="form-group">
                             <label for="age">Age</label>
-                            <input type="text" class="form-control mb-3" id="age" name="age" placeholder="Your Age" required>
+                            <input value="{{ old('age') }}" type="text" class="form-control mb-3" id="age" name="age" placeholder="Your Age" >
+                            @error('age')
+                                <span class="text-danger">{{ $message }}</span>
+                            @enderror
                         </div>
                         <div class="form-group">
                             <label for="math-levels">Ability to teach Mathmatics</label>
-                            <input type="text" class="form-control mb-3" id="math-levels" name="math-levels" placeholder="What level of maths you can teach ?" required>
+                            <input value="{{ old('math-levels') }}" type="text" class="form-control mb-3" id="math-levels" name="math-levels" placeholder="What level of maths you can teach ?" >
+                            @error('math-levels')
+                                <span class="text-danger">{{ $message }}</span>
+                            @enderror
                         </div>
                         <div class="form-group">
                             <label for="credentials">What credentials do you have ?</label>
-                            <input type="text" class="form-control mb-3" id="credentials" name="credentials" placeholder="What credentials do you have in the above fields ?" required>
+                            <input value="{{ old('credentials') }}" type="text" class="form-control mb-3" id="credentials" name="credentials" placeholder="What credentials do you have in the above fields ?" >
+                            @error('credentials')
+                                <span class="text-danger">{{ $message }}</span>
+                            @enderror
                         </div>
                         <div class="form-group">
                             <label for="cover-letter">Why should we hire you?</label>
-                            <textarea name="cover-letter" id="cover-letter" class="form-control mb-3" placeholder="Please write here cover letter" required></textarea>
+                            <textarea name="cover-letter" id="cover-letter" class="form-control mb-3" placeholder="Please write here cover letter" >{{ old('cover-letter') }}</textarea>
+                            @error('cover-letter')
+                                <span class="text-danger">{{ $message }}</span>
+                            @enderror
                         </div>
                         <div class="form-group">
                             <label for="interview">When you available for interview?</label>
-                            <input type="text" class="form-control mb-3" id="interview" name="interview" placeholder="If selected as a candidate, what days would you be available for an interview?" required>
+                            <input value="{{ old('interview') }}" type="text" class="form-control mb-3" id="interview" name="interview" placeholder="If selected as a candidate, what days would you be available for an interview?" >
+                            @error('interview')
+                                <span class="text-danger">{{ $message }}</span>
+                            @enderror
                         </div>
                         <div class="form-group">
                             <label for="hear">How did you hear about us?</label>
-                            <textarea name="hear" id="hear" class="form-control mb-3" placeholder="How did you hear about us?" required></textarea>
+                            <textarea name="hear" id="hear" class="form-control mb-3" placeholder="How did you hear about us?" >{{ old('hear') }}</textarea>
+                            @error('hear')
+                                <span class="text-danger">{{ $message }}</span>
+                            @enderror
                         </div>
                         <button type="submit" value="send" class="btn btn-primary">SEND MESSAGE</button>
                     </form>

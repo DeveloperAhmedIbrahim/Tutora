@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Mail\ApplicationMail;
 use App\Models\Course;
 use App\Models\Package;
 use App\Mail\ContactMail;
@@ -79,8 +80,28 @@ class HomeController extends Controller
         }
     }
 
-    public function application()
+    public function application(Request $request)
     {
-        return view('user.application');
+        if($request->method() == 'POST')
+        {
+            $request->validate([
+                'name' => 'required',
+                'email' => 'required',
+                'contact' => 'required',
+                'age' => 'required|numeric',
+                'math-levels' => 'required',
+                'credentials' => 'required',
+                'cover-letter' => 'required',
+                'interview' => 'required',
+                'hear' => 'required',
+            ]);
+            $data = $request->all();
+            Mail::to('applications@thetutora.com')->send(new ApplicationMail($data));
+            return redirect()->back()->with('success','Your application sent successfully.');
+        }
+        else
+        {
+            return view('user.application');
+        }
     }
 }
