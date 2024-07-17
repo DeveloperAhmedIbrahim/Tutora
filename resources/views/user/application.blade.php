@@ -23,12 +23,13 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h2 class="section-title">Contact Us</h2>
+                    <h2 class="section-title">Application Form</h2>
                 </div>
             </div>
             <div class="row" id="application">
                 <div class="col-lg-12 mb-4 mb-lg-0">
                     <form action="{{ url('application/#application') }}" method="POST">
+                        @csrf
                         <div class="form-group">
                             <label for="name">Full Name</label>
                             <input value="{{ old('name') }}" type="text" class="form-control mb-3" id="name" name="name" placeholder="Your Full Name" >

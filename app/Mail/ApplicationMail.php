@@ -33,7 +33,7 @@ class ApplicationMail extends Mailable
             replyTo: [
                 new Address($this->data['email']),
             ],
-            subject: $this->data['subject'],
+            subject: "Application from {$this->data['name']}",
         );
     }
 

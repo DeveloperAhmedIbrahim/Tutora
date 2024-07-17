@@ -425,7 +425,7 @@
                                                                     style="padding:0;Margin:0;padding-top:10px;padding-bottom:10px">
                                                                     <h1
                                                                         style="Margin:0;font-family:arial, 'helvetica neue', helvetica, sans-serif;mso-line-height-rule:exactly;letter-spacing:0;font-size:40px;font-style:normal;font-weight:bold;line-height:48px;color:#333333">
-                                                                        Someone Contact Us</h1>
+                                                                        Someone Applied</h1>
                                                                 </td>
                                                             </tr>
                                                         </table>
@@ -464,7 +464,7 @@
                                                                         <strong>Full Name</strong>,
                                                                     </p>
                                                                     <p style="Margin:0;mso-line-height-rule:exactly;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';line-height:24px;letter-spacing:0;color:#333333;font-size:16px">
-                                                                        {{ $data['subject'] }}&nbsp;
+                                                                        {{ $data['name'] }}&nbsp;
                                                                     </p>
                                                                     <p style="Margin:0;mso-line-height-rule:exactly;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';line-height:24px;letter-spacing:0;color:#333333;font-size:16px">
                                                                         <br>
