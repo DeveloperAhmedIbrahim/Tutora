@@ -95,10 +95,10 @@
                                 <a class="nav-link" href="{{ url('packages') }}">PACKAGES</a>
                             </li>
                             <li class="nav-item {{ request()->is('contact') == 1 ? 'active' : '' }} @@contact">
-                                <a class="nav-link" href="{{ url('contact') }}">CONTACT</a>
+                                <a class="nav-link" href="{{ url('contact') }}">Apply Now</a>
                             </li>
                             <li class="nav-item {{ request()->is('application') == 1 ? 'active' : '' }} @@application">
-                                <a class="nav-link" href="{{ url('application') }}">Apply Now</a>
+                                <a class="nav-link" href="{{ url('application') }}">Join The Team</a>
                             </li>
                         </ul>
                     </div>

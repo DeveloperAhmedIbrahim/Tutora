@@ -8,10 +8,9 @@
                 <div class="col-md-8">
                     <ul class="list-inline custom-breadcrumb mb-2">
                         <li class="list-inline-item"><a class="h2 text-primary font-secondary" href="{{ url('home') }}">Home</a></li>
-                        <li class="list-inline-item text-white h3 font-secondary nasted">Apply Now</li>
+                        <li class="list-inline-item text-white h3 font-secondary nasted">Join The Team</li>
                     </ul>
-                    <p class="text-lighten mb-0">Our courses offer a good compromise between the continuous assessment
-                        favoured by some universities and the emphasis placed on final exams by others.</p>
+                    <p class="text-lighten mb-0">Fill out our preliminary questionnaire below to start your application process!</p>
                 </div>
             </div>
         </div>
@@ -45,8 +44,8 @@
                             @enderror
                         </div>
                         <div class="form-group">
-                            <label for="contact">Contact Number</label>
-                            <input value="{{ old('contact') }}" type="text" class="form-control mb-3" id="contact" name="contact" placeholder="Your Contact Number" >
+                            <label for="contact">Phone Number</label>
+                            <input value="{{ old('contact') }}" type="text" class="form-control mb-3" id="contact" name="contact" placeholder="Your Phone Number" >
                             @error('contact')
                                 <span class="text-danger">{{ $message }}</span>
                             @enderror
@@ -59,28 +58,33 @@
                             @enderror
                         </div>
                         <div class="form-group">
-                            <label for="math-levels">Ability to teach Mathmatics</label>
+                            <label for="math-levels">Chosen Role</label>
+                            <select name="" id="">
+                                <option value="K-5 Math Tutor">K-5 Math Tutor</option>
+                                <option value="Math 6 Tutor">Math 6 Tutor</option>
+                                <option value="Pre-Algebra Tutor">Pre-Algebra Tutor</option>
+                            </select>
                             <input value="{{ old('math-levels') }}" type="text" class="form-control mb-3" id="math-levels" name="math-levels" placeholder="What level of maths you can teach ?" >
                             @error('math-levels')
                                 <span class="text-danger">{{ $message }}</span>
                             @enderror
                         </div>
                         <div class="form-group">
-                            <label for="credentials">What credentials do you have ?</label>
-                            <input value="{{ old('credentials') }}" type="text" class="form-control mb-3" id="credentials" name="credentials" placeholder="What credentials do you have in the above fields ?" >
+                            <label for="credentials">What experience do you have ?</label>
+                            <input value="{{ old('credentials') }}" type="text" class="form-control mb-3" id="credentials" name="credentials" placeholder="What experience do you have in the above fields ?" >
                             @error('credentials')
                                 <span class="text-danger">{{ $message }}</span>
                             @enderror
                         </div>
                         <div class="form-group">
                             <label for="cover-letter">Why should we hire you?</label>
-                            <textarea name="cover-letter" id="cover-letter" class="form-control mb-3" placeholder="Please write here cover letter" >{{ old('cover-letter') }}</textarea>
+                            <textarea name="cover-letter" id="cover-letter" class="form-control mb-3" placeholder="Please write a short paragraph explaining the strengths you’d bring to our team!" >{{ old('cover-letter') }}</textarea>
                             @error('cover-letter')
                                 <span class="text-danger">{{ $message }}</span>
                             @enderror
                         </div>
                         <div class="form-group">
-                            <label for="interview">When you available for interview?</label>
+                            <label for="interview">“When are you available for an interview?</label>
                             <input value="{{ old('interview') }}" type="text" class="form-control mb-3" id="interview" name="interview" placeholder="If selected as a candidate, what days would you be available for an interview?" >
                             @error('interview')
                                 <span class="text-danger">{{ $message }}</span>
