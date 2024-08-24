@@ -26,37 +26,18 @@
                     <img class="img-fluid w-100 mb-4" src="{{ asset('assets/images/about/about-page.jpg') }}" alt="about image">
                     <h2 class="section-title">ABOUT OUR JOURNEY</h2>
                     <p>
-                        Built by kids, for kids. Here at
-                        TheRaj Tutors, we aim to offer your child
-                        every opportunity to grow and reach their
-                        potential using personalized methods and
-                        approaches. At TheRajTutors, we
-                        understand that each child is unique and
-                        has different learning needs. That's why
-                        we tailor our teaching methods to match
-                        each individual's strengths and
-                        challenges. With a focus on creating a
-                        positive and engaging environment, we
-                        strive to make our classes enjoyable and
-                        accessible for all students.
+                        Built by kids, for kids. Here at Tutora, we aim to o"er your child every opportunity to grow and reach their
+                        potential using personalized methods and approaches. At Tutora, we understand that each child is unique and
+                        has di"erent learning needs. That's why we tailor our teaching methods to match each individual's strengths and
+                        challenges. With a focus on creating a positive and engaging environment, we strive to make our classes
+                        enjoyable and accessible for all students.
                     </p>
                     <p>
-                        Whether your
-                        child needs help with basic arithmetic or
-                        accessible for all students. Whether your
-                        child needs help with basic arithmetic or
-                        advanced calculus, we have the expertise
-                        to guide them towards success. Here, in
-                        our close knit community, each of our
-                        hand-picked tutors is selectively trained to
-                        reach your child's brain in ways that no
-                        one else can. Our goal is to build
-                        confidence, academic achievement, and to
-                        unlock the true ability of each student. So
-                        join us, at TheRajTutors, and help us, help
-                        you, to let your child breach the gaps in
-                        their learning and harness their full
-                        potential.
+                        Whether your child needs help with basic arithmetic or advanced
+                        calculus, we have the expertise to guide them towards success. Here, in our close knit community, each of our
+                        hand-picked tutors is selectively trained to reach your child's brain in ways that no one else can. Our goal is to
+                        build con#dence, academic achievement, and to unlock the true ability of each student. So join us, at Tutora,
+                        and help us, help you, enable your child to breach the gaps in their learning and harness their full potential.
                         <br>
                         <b>-Eshan Raj, Founder and CEO</b>
                     </p>

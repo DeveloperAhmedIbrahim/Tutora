@@ -10,13 +10,14 @@
                     <div class="row">
                         <div class="col-md-8">
                             <h1 class="text-white" data-animation-out="fadeOutRight" data-delay-out="5" data-duration-in=".3"
-                                data-animation-in="fadeInLeft" data-delay-in=".1">Your bright future is our mission</h1>
+                                data-animation-in="fadeInLeft" data-delay-in=".1">Welcome to Tutora!</h1>
                             <p class="text-muted mb-4" data-animation-out="fadeOutRight" data-delay-out="5"
-                                data-duration-in=".3" data-animation-in="fadeInLeft" data-delay-in=".4">Lorem ipsum dolor
-                                sit amet, consectetur adipisicing elit, sed do eiusmod
-                                tempor
-                                incididunt ut labore et
-                                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exer</p>
+                                data-duration-in=".3" data-animation-in="fadeInLeft" data-delay-in=".4">
+                                As an online tutoring platform for students K-12, our mission is to empower students to reach their full potential,
+                                both academically and within their own communities. With our innovative, a"ordable and personalized teaching
+                                methods, we tailor learning experiences to each student’s unique needs, pushing the boundaries of what they can
+                                achieve. Join us at Tutora and let’s work together to unlock your child’s full potential!
+                            </p>
                             <a href="{{ url('contact') }}" class="btn btn-primary" data-animation-out="fadeOutRight"
                                 data-delay-out="5" data-duration-in=".3" data-animation-in="fadeInLeft"
                                 data-delay-in=".7">Explore Course</a>
@@ -28,13 +29,14 @@
                     <div class="row">
                         <div class="col-md-8">
                             <h1 class="text-white" data-animation-out="fadeOutUp" data-delay-out="5" data-duration-in=".3"
-                                data-animation-in="fadeInDown" data-delay-in=".1">Your bright future is our mission</h1>
+                                data-animation-in="fadeInDown" data-delay-in=".1">Welcome to Tutora!</h1>
                             <p class="text-muted mb-4" data-animation-out="fadeOutUp" data-delay-out="5"
-                                data-duration-in=".3" data-animation-in="fadeInDown" data-delay-in=".4">Lorem ipsum dolor
-                                sit amet, consectetur adipisicing elit, sed do eiusmod
-                                tempor
-                                incididunt ut labore et
-                                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exer</p>
+                                data-duration-in=".3" data-animation-in="fadeInDown" data-delay-in=".4">
+                                As an online tutoring platform for students K-12, our mission is to empower students to reach their full potential,
+                                both academically and within their own communities. With our innovative, a"ordable and personalized teaching
+                                methods, we tailor learning experiences to each student’s unique needs, pushing the boundaries of what they can
+                                achieve. Join us at Tutora and let’s work together to unlock your child’s full potential!
+                            </p>
                             <a href="{{ url('contact') }}" class="btn btn-primary" data-animation-out="fadeOutUp" data-delay-out="5"
                                 data-duration-in=".3" data-animation-in="fadeInDown" data-delay-in=".7">Explore Course</a>
                         </div>
@@ -45,16 +47,16 @@
                     <div class="row">
                         <div class="col-md-8">
                             <h1 class="text-white" data-animation-out="fadeOutDown" data-delay-out="5" data-duration-in=".3"
-                                data-animation-in="fadeInUp" data-delay-in=".1">Your bright future is our mission</h1>
+                                data-animation-in="fadeInUp" data-delay-in=".1">Welcome to Tutora!</h1>
                             <p class="text-muted mb-4" data-animation-out="fadeOutDown" data-delay-out="5"
-                                data-duration-in=".3" data-animation-in="fadeInUp" data-delay-in=".4">Lorem ipsum dolor sit
-                                amet, consectetur adipisicing elit, sed do eiusmod
-                                tempor
-                                incididunt ut labore et
-                                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exer</p>
+                                data-duration-in=".3" data-animation-in="fadeInUp" data-delay-in=".4">
+                                As an online tutoring platform for students K-12, our mission is to empower students to reach their full potential,
+                                both academically and within their own communities. With our innovative, a"ordable and personalized teaching
+                                methods, we tailor learning experiences to each student’s unique needs, pushing the boundaries of what they can
+                                achieve. Join us at Tutora and let’s work together to unlock your child’s full potential!
+                            </p>
                             <a href="{{ url('contact') }}" class="btn btn-primary" data-animation-out="fadeOutDown"
-                                data-delay-out="5" data-duration-in=".3" data-animation-in="zoomIn" data-delay-in=".7">Apply
-                                now</a>
+                                data-delay-out="5" data-duration-in=".3" data-animation-in="zoomIn" data-delay-in=".7">Apply now</a>
                         </div>
                     </div>
                 </div>
@@ -68,9 +70,12 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 col-sm-4 position-relative success-video">
-                    <a class="play-btn venobox" href="https://youtu.be/nA1Aqp0sPQo" data-vbtype="video">
+                    {{-- <a class="play-btn venobox" href="https://youtu.be/nA1Aqp0sPQo" data-vbtype="video">
                         <i class="ti-control-play"></i>
-                    </a>
+                    </a> --}}
+                    {{-- <a class="play-btn" href="javascript:void(0)" data-vbtype="video">
+                        <i class="ti-control-play"></i>
+                    </a> --}}
                 </div>
                 <div class="col-lg-6 col-sm-8">
                     <div class="bg-white p-5">
@@ -105,31 +110,37 @@
                     <div class="row feature-blocks bg-gray justify-content-between">
                         <div class="col-sm-6 col-xl-5 mb-xl-5 mb-lg-3 mb-4 text-center text-sm-left">
                             <i class="ti-book mb-xl-4 mb-lg-3 mb-4 feature-icon"></i>
-                            <h3 class="mb-xl-4 mb-lg-3 mb-4">Scholorship News</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-                                labore
-                                et dolore magna aliqua. Ut enim ad</p>
+                            <h3 class="mb-xl-4 mb-lg-3 mb-4">Our Mission</h3>
+                            <p>
+                                We aim to empower students in reaching their full potential as students. However,
+                                we recognize that academics aren’t for everyone, but are a necessary part of a student’s life. Our goal is to allow
+                                students the ability to achieve what they want to achieve, by providing them with a strong foundation in the
+                                classroom, even if that’s ultimately not their chosen path.                            </p>
                         </div>
                         <div class="col-sm-6 col-xl-5 mb-xl-5 mb-lg-3 mb-4 text-center text-sm-left">
                             <i class="ti-blackboard mb-xl-4 mb-lg-3 mb-4 feature-icon"></i>
-                            <h3 class="mb-xl-4 mb-lg-3 mb-4">Our Notice Board</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-                                labore
-                                et dolore magna aliqua. Ut enim ad</p>
+                            <h3 class="mb-xl-4 mb-lg-3 mb-4">Our Courses</h3>
+                            <p>
+                                Tutora o"ers mathematics courses ranging from kindergarten to high school level. Each of our courses aims at
+                                reaching student’s in a unique way to best prepare them for the classroom.                            </p>
                         </div>
                         <div class="col-sm-6 col-xl-5 mb-xl-5 mb-lg-3 mb-4 text-center text-sm-left">
                             <i class="ti-agenda mb-xl-4 mb-lg-3 mb-4 feature-icon"></i>
-                            <h3 class="mb-xl-4 mb-lg-3 mb-4">Our Achievements</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-                                labore
-                                et dolore magna aliqua. Ut enim ad</p>
+                            <h3 class="mb-xl-4 mb-lg-3 mb-4">Pricing</h3>
+                            <p>
+                                Our main mission is reaching as many students as possible, with as a"ordable pricing as possible. Tutora’s courses
+                                advertise comfortable price tags, so we can connect with young minds everywhere. For exact pricing, feel free to check
+                                out our Courses page!
+                            </p>
                         </div>
                         <div class="col-sm-6 col-xl-5 mb-xl-5 mb-lg-3 mb-4 text-center text-sm-left">
                             <i class="ti-write mb-xl-4 mb-lg-3 mb-4 feature-icon"></i>
-                            <h3 class="mb-xl-4 mb-lg-3 mb-4">Admission Now</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-                                labore
-                                et dolore magna aliqua. Ut enim ad</p>
+                            <h3 class="mb-xl-4 mb-lg-3 mb-4">Join The Team</h3>
+                            <p>
+                                We’re always looking for new tutors! If you think you’d be a good #t for the Tutora family, you can start your
+                                application using the Join The Team menu in the navigation bar. Prospective tutors will undertake a preliminary
+                                questionnaire, and if selected, will enjoy high starting wages, $exible hours, material to use in sessions, and
+                                opportunities for professional development and advancement.                            </p>
                         </div>
                     </div>
                 </div>
