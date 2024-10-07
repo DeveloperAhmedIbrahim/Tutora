@@ -59,12 +59,11 @@
                         </div>
                         <div class="form-group">
                             <label for="math-levels">Chosen Role</label>
-                            <select name="" id="">
+                            <select class="form-control mb-3" id="math-levels" name="math-levels" >
                                 <option value="K-5 Math Tutor">K-5 Math Tutor</option>
                                 <option value="Math 6 Tutor">Math 6 Tutor</option>
                                 <option value="Pre-Algebra Tutor">Pre-Algebra Tutor</option>
                             </select>
-                            <input value="{{ old('math-levels') }}" type="text" class="form-control mb-3" id="math-levels" name="math-levels" placeholder="What level of maths you can teach ?" >
                             @error('math-levels')
                                 <span class="text-danger">{{ $message }}</span>
                             @enderror
@@ -84,7 +83,7 @@
                             @enderror
                         </div>
                         <div class="form-group">
-                            <label for="interview">“When are you available for an interview?</label>
+                            <label for="interview">When are you available for an interview?</label>
                             <input value="{{ old('interview') }}" type="text" class="form-control mb-3" id="interview" name="interview" placeholder="If selected as a candidate, what days would you be available for an interview?" >
                             @error('interview')
                                 <span class="text-danger">{{ $message }}</span>
@@ -92,7 +91,7 @@
                         </div>
                         <div class="form-group">
                             <label for="hear">How did you hear about us?</label>
-                            <textarea name="hear" id="hear" class="form-control mb-3" placeholder="How did you hear about us?" >{{ old('hear') }}</textarea>
+                            <input type="text" name="hear" id="hear" class="form-control mb-3" placeholder="How did you hear about us?" value="{{ old('hear') }}">
                             @error('hear')
                                 <span class="text-danger">{{ $message }}</span>
                             @enderror

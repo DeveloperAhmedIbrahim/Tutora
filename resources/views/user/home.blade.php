@@ -4,61 +4,20 @@
     <!-- hero slider -->
     <section class="hero-section overlay bg-cover" data-background="{{ asset('assets/images/banner/banner-1.jpg') }}">
         <div class="container">
-            <div class="hero-slider">
-                <!-- slider item -->
-                <div class="hero-slider-item">
-                    <div class="row">
-                        <div class="col-md-8">
-                            <h1 class="text-white" data-animation-out="fadeOutRight" data-delay-out="5" data-duration-in=".3"
-                                data-animation-in="fadeInLeft" data-delay-in=".1">Welcome to Tutora!</h1>
-                            <p class="text-muted mb-4" data-animation-out="fadeOutRight" data-delay-out="5"
-                                data-duration-in=".3" data-animation-in="fadeInLeft" data-delay-in=".4">
-                                As an online tutoring platform for students K-12, our mission is to empower students to reach their full potential,
-                                both academically and within their own communities. With our innovative, a"ordable and personalized teaching
-                                methods, we tailor learning experiences to each student’s unique needs, pushing the boundaries of what they can
-                                achieve. Join us at Tutora and let’s work together to unlock your child’s full potential!
-                            </p>
-                            <a href="{{ url('contact') }}" class="btn btn-primary" data-animation-out="fadeOutRight"
-                                data-delay-out="5" data-duration-in=".3" data-animation-in="fadeInLeft"
-                                data-delay-in=".7">Explore Course</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- slider item -->
-                <div class="hero-slider-item">
-                    <div class="row">
-                        <div class="col-md-8">
-                            <h1 class="text-white" data-animation-out="fadeOutUp" data-delay-out="5" data-duration-in=".3"
-                                data-animation-in="fadeInDown" data-delay-in=".1">Welcome to Tutora!</h1>
-                            <p class="text-muted mb-4" data-animation-out="fadeOutUp" data-delay-out="5"
-                                data-duration-in=".3" data-animation-in="fadeInDown" data-delay-in=".4">
-                                As an online tutoring platform for students K-12, our mission is to empower students to reach their full potential,
-                                both academically and within their own communities. With our innovative, a"ordable and personalized teaching
-                                methods, we tailor learning experiences to each student’s unique needs, pushing the boundaries of what they can
-                                achieve. Join us at Tutora and let’s work together to unlock your child’s full potential!
-                            </p>
-                            <a href="{{ url('contact') }}" class="btn btn-primary" data-animation-out="fadeOutUp" data-delay-out="5"
-                                data-duration-in=".3" data-animation-in="fadeInDown" data-delay-in=".7">Explore Course</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- slider item -->
-                <div class="hero-slider-item">
-                    <div class="row">
-                        <div class="col-md-8">
-                            <h1 class="text-white" data-animation-out="fadeOutDown" data-delay-out="5" data-duration-in=".3"
-                                data-animation-in="fadeInUp" data-delay-in=".1">Welcome to Tutora!</h1>
-                            <p class="text-muted mb-4" data-animation-out="fadeOutDown" data-delay-out="5"
-                                data-duration-in=".3" data-animation-in="fadeInUp" data-delay-in=".4">
-                                As an online tutoring platform for students K-12, our mission is to empower students to reach their full potential,
-                                both academically and within their own communities. With our innovative, a"ordable and personalized teaching
-                                methods, we tailor learning experiences to each student’s unique needs, pushing the boundaries of what they can
-                                achieve. Join us at Tutora and let’s work together to unlock your child’s full potential!
-                            </p>
-                            <a href="{{ url('contact') }}" class="btn btn-primary" data-animation-out="fadeOutDown"
-                                data-delay-out="5" data-duration-in=".3" data-animation-in="zoomIn" data-delay-in=".7">Apply now</a>
-                        </div>
-                    </div>
+            <div class="row">
+                <div class="col-md-8">
+                    <h1 class="text-white" data-animation-out="fadeOutRight" data-delay-out="5" data-duration-in=".3"
+                        data-animation-in="fadeInLeft" data-delay-in=".1">Welcome to Tutora!</h1>
+                    <p class="text-muted mb-4" data-animation-out="fadeOutRight" data-delay-out="5"
+                        data-duration-in=".3" data-animation-in="fadeInLeft" data-delay-in=".4">
+                        As an online tutoring platform for students K-12, our mission is to empower students to reach their full potential,
+                        both academically and within their own communities. With our innovative, affordable and personalized teaching
+                        methods, we tailor learning experiences to each student’s unique needs, pushing the boundaries of what they can
+                        achieve. Join us at Tutora and let’s work together to unlock your child’s full potential!
+                    </p>
+                    <a href="{{ url('contact') }}" class="btn btn-primary" data-animation-out="fadeOutRight"
+                        data-delay-out="5" data-duration-in=".3" data-animation-in="fadeInLeft"
+                        data-delay-in=".7">Explore Course</a>
                 </div>
             </div>
         </div>
@@ -128,7 +87,7 @@
                             <i class="ti-agenda mb-xl-4 mb-lg-3 mb-4 feature-icon"></i>
                             <h3 class="mb-xl-4 mb-lg-3 mb-4">Pricing</h3>
                             <p>
-                                Our main mission is reaching as many students as possible, with as a"ordable pricing as possible. Tutora’s courses
+                                Our main mission is reaching as many students as possible, with as affordable pricing as possible. Tutora’s courses
                                 advertise comfortable price tags, so we can connect with young minds everywhere. For exact pricing, feel free to check
                                 out our Courses page!
                             </p>
@@ -137,10 +96,11 @@
                             <i class="ti-write mb-xl-4 mb-lg-3 mb-4 feature-icon"></i>
                             <h3 class="mb-xl-4 mb-lg-3 mb-4">Join The Team</h3>
                             <p>
-                                We’re always looking for new tutors! If you think you’d be a good #t for the Tutora family, you can start your
+                                We’re always looking for new tutors! If you think you’d be a good fit for the Tutora family, you can start your
                                 application using the Join The Team menu in the navigation bar. Prospective tutors will undertake a preliminary
                                 questionnaire, and if selected, will enjoy high starting wages, $exible hours, material to use in sessions, and
-                                opportunities for professional development and advancement.                            </p>
+                                opportunities for professional development and advancement.
+                            </p>
                         </div>
                     </div>
                 </div>
